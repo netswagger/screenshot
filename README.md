@@ -1,6 +1,16 @@
-    This is my simple hack happened because beauty of chrome inspector.. Many time we need to get screen shot of very 
-large number of pages and we cannot go to each page so we need some thing for it. 
-    there is service called url2png which do it .. but i hacked  there service and get it for "freeeeee!!!"..
-    You want to use it simplay use this api http://urlimg.phpfogapp.com/?url=<ur url >
+This project is a fork off of chetandhembre's screenshot project found here https://github.com/chetandhembre/screenshot. This version allows you to get screenshot of any website, save a local copyof the screenshot for faster loadtime and display it on the site.
 
-keep hacking!!!!
+Here's an example on how to use this fuction:
+
+```
+<?php
+include 'screenshot.php';
+function test() {
+  console.log("notice the blank line before this function?");
+}
+?>
+<img src="<?php echo screenshot("google.com");?>"/>
+```
+And thats it. Enjoy!
+
+"Ben C. Bond" <bencbond@gmail.com> 
